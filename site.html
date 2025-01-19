@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на университет</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        h1 {
+            margin: 20px;
+            color: #333;
+        }
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Добро пожаловать в тест!</h1>
+    <form action="https://example.com/result" method="GET">
+        <p>Какой у вас уровень английского?</p>
+        <label>
+            <input type="radio" name="english_level" value="Beginner" required> Beginner
+        </label>
+        <label>
+            <input type="radio" name="english_level" value="Intermediate"> Intermediate
+        </label>
+        <label>
+            <input type="radio" name="english_level" value="Advanced"> Advanced
+        </label>
+        <br><br>
+        <p>Какую страну для обучения вы предпочитаете?</p>
+        <label>
+            <input type="checkbox" name="country" value="USA"> США
+        </label>
+        <label>
+            <input type="checkbox" name="country" value="UK"> Великобритания
+        </label>
+        <label>
+            <input type="checkbox" name="country" value="Canada"> Канада
+        </label>
+        <br><br>
+        <input type="submit" value="Узнать результат">
+    </form>
+</body>
+</html>
